@@ -1,0 +1,38 @@
+#1
+x = input()
+if int(x) > 1 and int(x) / 1 == int(x) and int(x) / int(x) == 1 and int(x) % 2 != 0:
+    print(x, 'простое')
+elif int(x) == 2:
+    print(x, 'простое')
+elif int(x) == 1 or int(x) == 0:
+    print(x, 'не сложное и не простое')
+else:
+    print('сложное')
+#2
+def xxx(a, b):
+    if a == b:
+        return 0
+    if a > b:
+        return 1
+    if a < b:
+        return -1
+
+num = [543, 112, 876, 634, 765, 124, 745, 79]
+num.sort(xxx)
+#3
+print(num)
+num = [1500, 1000, 500, 250, 100, 50, 25]
+
+#4
+print(max(num))
+x = input()
+if x == 0:
+    print(0)
+else:
+    a = 0
+    b = 1
+    for i in range(2, x+1):
+        y = a
+        a = b
+        b = y + b
+    print(b)
